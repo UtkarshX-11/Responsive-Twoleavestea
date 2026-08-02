@@ -1,0 +1,1055 @@
+@font-face {
+    font-family: recless;
+    src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+    font-family: figtree;
+    src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family: robotomono;
+    src: url(./fonts/RobotoMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: midnight;
+    src: url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: #FBF9EB;;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 6%;
+}
+nav .nav-section {
+    height: 10vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem 1rem;
+    background-color: #fffefb;
+    border: 0.5px solid black;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    animation: navAnimae 0.8s ease forwards;
+}
+
+
+@keyframes navAnimae {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+nav .nav-1 i {
+    font-size: 3rem;
+}
+
+nav .nav-1 a {
+    display: none;
+}
+
+
+nav .nav-2 {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-2 img {
+    width: 100%;
+    animation: navinside 2s ease  forwards ;
+
+}
+
+nav .nav-3 .hide {
+    display: none;
+}
+
+
+
+
+          /* section1 */
+
+section .sec-1 {
+    height: 95vh;
+    width: 100%;
+    border-bottom: 2px solid black;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=900.0);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content:end;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+section .sec-1 img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.sec-1 h1 {
+    width: 80%;
+    font-family: recless;
+    font-size: clamp(3.5rem , 8vw , 10rem );
+    color:white;
+    font-weight:lighter;
+    
+}
+
+.sec-1 p {
+    font-family:figtree;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw ,3rem);
+    width:97% ;
+}
+
+
+.sec-1 button{
+    width: 90%;
+    font-weight: 500;
+    font-family: figtree;
+    padding: 0.9rem 28vw;
+    color: white;
+    background-color:#2A2857;
+    font-size: clamp(1.1rem,2vw,2rem);
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition:all ease-in 0.2s;
+}
+
+.sec-1 button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+        /* section2 */
+
+.sec-2 {
+    background-color: #FBF9EB;
+    /* height: 150vh; */
+    width: 100%;
+    padding: 1rem;
+}
+
+.sec-2 .sec-2-head1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem; 
+    gap: 5rem;
+}
+
+.sec-2 .sec-2-head1 .h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sec-2 h1 {
+    font-family: recless;
+    text-align: center;
+    font-weight: 100;
+}
+
+.sec-2 h1 span {
+    display: block;
+}
+
+.sec-2 #best {
+    /* width: fit-content; */
+    display: inline-block;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 500;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: midnight;
+    background-color: #DAAEEA;
+}
+
+.sec-2 .cards-head::-webkit-scrollbar{
+    display: none;
+}
+
+.sec-2 .cards-head {
+    height: 85vh;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.sec-2 .sec-2-c-container {
+    height: 65vh;
+    width: 100%;
+}
+
+.sec-2-c-container .card-img {
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    background-color: #C1EE91;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.sec-2-c-container #c2 {
+    background-color: #C8E892;
+}
+
+.sec-2-c-container #c3 {
+    background-color:#B0E8C1 ;
+}
+
+.sec-2-c-container #c4 {
+    background-color: #CCE3FF ;
+}
+
+.sec-2-c-container #c5 {
+    background-color:#FFD884 ;
+}
+
+.sec-2-c-container #c6 {
+    background-color:#C1E4F8 ;
+}
+
+.sec-2-c-container #c7 {
+    background-color:#C0E571 ;
+}
+
+.sec-2-c-container #c8 {
+    background-color:#FFCB96 ;
+}
+
+.sec-2-c-container #c9 {
+    background-color:#FFCB96 ;
+}
+
+.sec-2-c-container #c10 {
+    background-color:#AEE0F9 ;
+}
+
+.sec-2-c-container .card-img img{
+    height: 240px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    padding: 0.5rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.sec-2-c-container .card-img img:hover{
+    padding: 1rem;
+}
+
+.sec-2-c-container .card-img .img-tptxt {
+    display: flex;
+    justify-content:space-between;
+}
+
+.img-tptxt button {
+    background-color: white;
+    color: black;
+    font-family: midnight;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.card-img .img-bttxt {
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    align-self: flex-end;
+    font-size: 1rem;
+    color: black;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-img .img-bttxt:hover{
+    background-color: black;
+    color: white;
+}
+
+.sec-2-c-container .card-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.card-txt h1 {text-align: left;
+    font-size: 1.5rem;
+}
+
+.card-txt h6 {
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: figtree;
+}
+
+.card-txt p {
+    font-family:figtree;
+    color: rgb(113, 113, 113);
+}
+
+.sec-2 .sec-2-bottom {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+border-bottom: 2px solid black;
+}
+
+
+.sec-2 .s-2-btm-btn {
+    padding: 5rem 0rem;
+}
+
+.sec-2-bottom .s-2-btm-btn button {
+    background-color: #2A2857;
+    color: white;
+    padding: 16px 60px;
+    font-size: 1rem;
+    border-radius: 2.5rem;   
+    transition: all ease-in 0.2s;
+
+}
+
+.sec-2-bottom .s-2-btm-btn button:hover{
+    background-color: white;
+    color: black;
+    transition: all ease-in 0.2s;
+}
+
+.sec-3 {
+    /* height: 150vh; */
+    padding: 1rem;
+    /* border: 2px solid black; */
+}
+
+.sec-3-head1 {
+    padding: 4rem 0rem;
+}
+
+.sec-3-head1 .rvs {
+    padding: 0px 4px;
+    display: inline-block;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: midnight;
+    background-color:#91d815;
+}
+
+.s-3clayout::-webkit-scrollbar {
+    display:none;
+}
+
+.s-3clayout {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.s-3clhead {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.card03-c1 {
+    background-color: #F5AF8A;
+    height: 440px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    justify-content: end;
+}
+
+.card03-c1 .prt1 {
+    font-family: recless;
+    gap: 1rem;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.prt1 h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    width: 80%;
+}
+
+.prt1 p {
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 1rem;
+}
+
+.prt2 .container {
+    padding: 0.5rem;
+    background-color: #EA6D44;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius:1rem;
+}
+
+.prt2 .container .con-l {
+    border-right:1px solid ;
+    padding:10px 1px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 90px;
+}
+
+.container .con-l img {
+    height: 100%;
+}
+
+.container .con-r {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: robotomono;
+}
+
+.container .con-r h1 {
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: white;
+    width: 50%;
+}
+
+.con-r button {
+    padding: 1.1rem;
+    font-size: 1rem;
+    border: 0.5px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+
+}
+
+.con-r button:hover{
+    background-color: black;
+    color: white;
+}
+
+.s-3clhead #c302{
+    background-color: #ABDF74;
+}
+#c30202{
+    background-color: #73BC25;
+}
+
+.s-3clhead #c403 {
+    background-color: #FFD265;
+}
+#c40302 {
+    background-color: #FFB500;
+}
+
+.s-3clhead #c503{
+    background-color: #ABDF74;
+}
+.s-3clhead #c50302{
+    background-color: #73BC25;
+}
+
+.s-3clhead #c603 {
+    background-color: #D9C2E1;
+}
+#c60302 {
+    background-color: #C790DB;
+}
+
+.sec-4 {
+    padding: 3rem 0rem;
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sec-4 .s4longimg-txt {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2560);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+}
+
+.sec-4 .s4longimg-txt .s4-head1{
+    padding:1rem;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 8rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.s4-head1 h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family:midnight;
+    color: white;
+}
+
+.s4-head1 p {
+    font-size: 2rem;
+    font-family: recless;
+    color: white;
+    width: 300px;
+}
+
+.s4-btm1 {
+    /* background: blue; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s4-btm1 .gifctnr {
+    height: 250px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gifctnr .gifr1{
+    /* background:#73BC25; */
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gifr1 img {
+    height: 80px;
+}
+
+.gifr2 {
+    width: 100px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+}
+
+.gifr2 img{
+    height: 80px;
+}
+
+.s4-btm1 button {
+
+    width: 90%;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.s4-btm1 button:hover{
+    background-color: black;
+    color: white;
+}
+
+.sec-5 {
+    /* background-color: red; */
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.s5-head {
+    padding: 1.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sec-5 .s5-head button {
+    padding: 0px 4px;
+    width: 8rem;
+    display: inline-block;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: midnight;
+    background-color:#FF7F31;
+}
+
+.s5-head h1 {
+    font-family: recless;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.sec-5 .s5-sbox {
+    width: 21rem;
+    background-color: none;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1.3rem 2rem;
+    font-family: recless;
+    color: rgba(0, 0, 0, 0.729);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.s5-btns {
+    padding: 2rem 0rem;
+    font-family: recless;
+    width: 90%;
+}
+
+.s5-btns p {
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    font-family: figtree;
+}
+
+.s5-btns .btns-16s {
+    /* padding: 1rem 0rem; */
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* gap: 1rem; */
+}
+
+.btns-16s .a-link {
+    padding: 15px 8px;
+}
+
+.s5-btns .btns-16s a{
+    color: black;
+    padding: 0.5rem 0.7rem;
+    text-decoration:none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border: 1px solid black;
+    background-color:#DAEAFF;
+}
+
+.sec-6 {
+    height: 150vh;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #2A2857; */
+}
+
+.sec-6 .s6-prt1 {
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=1350.0);
+    height: 50%;
+    background-size:cover;
+}
+
+.sec-6 .s6-prt2{
+    background-color: #2A2857;
+    display: flex;
+    height: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 1.5rem;
+}
+
+.s6-prt2 h1{
+    font-family: recless;
+    font-size: 46px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.s6-prt2 p {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem 0.5rem;
+    font-family: figtree;
+}
+
+.s6-prt2 button {
+    width: 330px;
+    padding: 1rem;
+    border-radius:2rem;
+    font-size: 1rem;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+.s6-prt2 button:hover{
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (min-width:768px) {
+
+nav .nav-1 {
+    width: auto;
+}
+
+  .sec-1 button {
+    width: 95%;
+    height: auto;
+    font-weight: 500;
+    font-family: figtree;
+    color: white;
+    background-color:#2A2857;
+    border-radius: 2rem;
+}
+
+.sec-1 p {
+    font-size:1.1rem;
+}
+
+.sec-2 h1 span {
+    display: inline-block;
+}
+
+.sec-2 .sec-2-head1 .h1 {
+    padding: 0rem 13rem;
+    /* width: 40%; */
+}
+
+/* .sec-2 .s-2-btm-btn {
+    width: 30vw;
+} */
+
+}
+
+
+@media (min-width:1024px) {
+
+nav .nav-section {
+width: 97%;
+overflow: hidden;
+}
+
+nav .nav-1 {
+width: 33%;
+}
+
+
+nav .nav-1 a {
+display: block;
+font-family:recless;
+text-decoration: none;
+color: black;
+font-size: 1.5rem;
+    animation: navinside 2s ease  forwards ;
+
+}
+
+nav .nav-1 .ri-menu-line {
+display: none
+}
+
+nav .nav-1links {
+    display: flex;
+    gap: 2rem;
+}
+
+nav .nav-1links #link1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+#link1 i {
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color: #C0DBFF;
+    border: 1px solid rgba(0, 0, 0, 0.66);
+}
+
+nav .nav-1links #link2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+#link2 i {
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color:#C0DBFF;
+    border: 1px solid rgba(0, 0, 0, 0.66);
+}
+
+nav .nav-1links #link3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+nav .nav-3 .hide {
+    display: block;
+}
+
+nav .nav-3 #hideme{
+    display: none;
+}
+
+
+.nav-3 .right-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav .nav-3 .right-links a {
+    font-size: 0.9rem;
+    font-family: robotomono;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    animation: navinside 2s ease  forwards ;
+
+}
+
+@keyframes navinside {
+    from {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section .sec-1 {
+    height: 95vh;
+    width: 100%;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=1280);
+    background-position: left ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content:end;
+    text-align:start;
+    align-items:start;
+    padding: 2.3rem 2.5rem;
+    
+}
+
+section .sec-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec-1 h1 {
+    width: 41%;
+    font-family: recless;
+    font-size: clamp(2.3rem , 8vw , 7rem );
+    color:white;
+    font-weight:lighter;
+    
+}
+
+.sec-1 p {
+    font-family:figtree;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1vw ,2rem);
+    width:44%;
+}
+
+
+.sec-1 button{
+    width: auto;
+    font-weight: 500;
+    font-family: figtree;
+    padding:0.8rem 2rem;
+    color: white;
+    background-color:#2A2857;
+    font-size:1.2rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+/* section-2 heading best seller & cards */
+
+.sec-2 .sec-2-head1 {
+    align-items: center;
+    padding: 5rem 0rem;
+}
+
+.sec-2 h1 {
+    width: 70%;
+    font-size: clamp(2rem,3.5rem,3.5rem);
+}
+
+.sec-2 h1 span {
+    display: inline-block;
+}
+
+.sec-2 #best {
+    font-size: 3.3rem;
+    padding: 0px 10px;
+    font-weight: 500;
+}
+
+.sec-2 .sec-2-c-container {
+    height: 44vh;
+    width: 35vw;
+    padding: 0.3rem;
+}
+
+.sec-2-c-container .card-img {
+    height: 380px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    background-color: #C1EE91;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+}
+
+.card-txt h1 {
+    padding-top:1rem ;
+    font-size: 1.5rem;
+}
+
+        /* section 4 big img  */
+
+.s4-head1 h1 {
+    font-size: 10rem;
+}
+
+.s4-head1 p {
+    font-size: 3.5rem;
+    width: 82%;
+}
+
+
+.gifctnr .gifr1{
+    height: 400px;
+    width: 300px;
+}
+
+.gifr1 img {
+    height: 100px;
+}
+
+.gifr2 img{
+    height: 100px;
+}
+
+.s4-btm1 button {
+    width: 20%;
+}
+.sec-6 {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sec-6 .s6-prt1 {
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=1350.0);
+    height: 70%;
+    width: 50%;
+    background-size:cover;
+}
+
+.sec-6 .s6-prt2{
+    background-color: #2A2857;
+    display: flex;
+    width: 50%;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 1.5rem;
+}
+
+}
